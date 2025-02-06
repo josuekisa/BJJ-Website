@@ -5,8 +5,9 @@ import wp1 from '../assets/wp.jpg'
 const Page = () => {
   
   const [showText,setShowText]= useState('');
-  const [blurEffect,setBlurEffect]=useState('');
+  const [blurEffect,setBlurEffect]=useState('blur-xs');
   const [hideText,setHideText]= useState('');
+  
 
   
 
@@ -15,13 +16,14 @@ const Page = () => {
   useEffect(()=> {
    
    const handleScroll = () => {
-        if (window.scrollY < 250) {
+        if (window.scrollY < 300) {
             setBlurEffect('blur-md')
             setShowText('BJJ FANATIQUE - Scroll down to learn more');
+            
             setHideText(' ');
         }
         else {
-            setBlurEffect('');
+            setBlurEffect('blur-xs');
             setHideText('  animate__animated animate__fadeOutUp ');;
         }
     };

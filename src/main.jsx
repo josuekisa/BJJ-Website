@@ -4,6 +4,7 @@ import './index.css'
 import Navbar from './components/Navbar.jsx'
 import Page from './components/Page.jsx'
 import Information from './components/Information.jsx'
+import Passion from './components/Passion.jsx'
 
 
 
@@ -12,5 +13,7 @@ createRoot(document.getElementById('root')).render(
     <Navbar/>
     <Page/>
     <Information/>
+    <Passion/>
+    
   </StrictMode>,
 )

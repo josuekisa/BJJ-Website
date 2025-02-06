@@ -9,10 +9,10 @@ const Navbar = () => {
 
 const [showMenu, setShowMenu]=useState(false);
     return (
-    <div className="  bg-amber-800  fixed top-3 z-50 right-2 left-2 shadow-lg ">
+    <div className="  bg-[#1E3A8A]  fixed top-3 z-50 right-2 left-2 shadow-lg ">
     <div className='  flex flex-row items-center justify-between '>
        <h1 className='text-4xl'> La Navbar</h1>
-       <ul className='hidden sm:flex flex-row items-end gap-4' >
+       <ul className='hidden sm:flex flex-row items-end gap-4  text-[#F5F5F5] ' >
          <li>Histoire </li>
          <li>Regle</li>
          <li>soumision</li>
@@ -27,7 +27,7 @@ const [showMenu, setShowMenu]=useState(false);
 
          </div>
          { showMenu && (
-             <ul className='flex sm:hidden flex-col items-center mt-3 gap-4 text-black'>
+             <ul className='flex sm:hidden flex-col items-center mt-3 gap-4 text-black  text-[#F5F5F5] '>
                <li>Histoire </li>
                <li>Regle</li>
                <li>soumision</li>
