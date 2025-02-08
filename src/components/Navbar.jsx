@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react';
 import { IoMdClose } from "react-icons/io";
 import { RxHamburgerMenu } from "react-icons/rx";
+import { Link } from 'react-router-dom';
 
 
 
@@ -9,12 +10,13 @@ const Navbar = () => {
 
 const [showMenu, setShowMenu]=useState(false);
     return (
-    <div className="  bg-[#1E3A8A]  fixed top-3 z-50 right-2 left-2 shadow-lg ">
+    <div className="  bg-[#1e3b8a0a]  fixed top-3 z-50 right-2 left-2 shadow-lg ">
     <div className='  flex flex-row items-center justify-between '>
-       <h1 className='text-4xl'> La Navbar</h1>
+       
+       <Link to='/'><h1 className='text-4xl'> La Navbar</h1></Link>
        <ul className='hidden sm:flex flex-row items-end gap-4  text-[#F5F5F5] ' >
-         <li>Histoire </li>
-         <li>Regle</li>
+        <Link to="/Story"> Histoire</Link>
+        <Link> <li>Regle</li></Link>
          <li>soumision</li>
          <li> Fédération </li>
        </ul>
