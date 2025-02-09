@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { IoMdClose } from "react-icons/io";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { Link } from 'react-router-dom';
-
+import Logo from '../assets/BJJ.svg'
 
 
 const Navbar = () => {
@@ -11,9 +11,9 @@ const Navbar = () => {
 const [showMenu, setShowMenu]=useState(false);
     return (
     <div className="  bg-[#1e3b8a0a]  fixed top-3 z-50 right-2 left-2 shadow-lg ">
-    <div className='  flex flex-row items-center justify-between '>
+    <div className='  flex flex-row items-center justify-start '>
        
-       <Link to='/'><h1 className='text-4xl'> La Navbar</h1></Link>
+       <Link to='/'><img src={Logo}alt='' className='w-28' /></Link>
        <ul className='hidden sm:flex flex-row items-end gap-4  text-[#F5F5F5] ' >
         <Link to="/Story"> Histoire</Link>
         <Link> <li>Regle</li></Link>

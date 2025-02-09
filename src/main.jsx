@@ -7,6 +7,7 @@ import Information from './components/Information.jsx'
 import Passion from './components/Passion.jsx'
 import Story from './components/Story.jsx'
 import Rules from './components/Rules.jsx'
+import Footer from './components/Footer.jsx'
 import { BrowserRouter , Route , Routes} from 'react-router-dom'
 
 
@@ -21,6 +22,8 @@ createRoot(document.getElementById('root')).render(
        <Page/>
        <Information />
        <Passion />
+       <Footer />
+
          
          </>
        } />
