@@ -19,6 +19,7 @@ createRoot(document.getElementById('root')).render(
      <Routes>
        <Route exact path="/" element={
        <>
+       
        <Page/>
        <Information />
        <Passion />
