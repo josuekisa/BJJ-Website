@@ -16,7 +16,7 @@ const [showMenu, setShowMenu]=useState(false);
        <Link to='/'><img src={Logo}alt='' className='w-28' /></Link>
        <ul className='hidden sm:flex flex-row items-end gap-4  text-[#F5F5F5] ' >
         <Link to="/Story"> Histoire</Link>
-        <Link> <li>Regle</li></Link>
+        <Link to="/Rules"> Regle</Link>
          <li>soumision</li>
          <li> Fédération </li>
        </ul>
